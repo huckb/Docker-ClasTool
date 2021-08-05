@@ -14,6 +14,6 @@ ENV PATH ${CLASTOOL}/bin/${OSNAME}:${PATH}
 ENV ROOT_INCLUDE_PATH ${CLASTOOL}/include:${ROOT_INCLUDE_PATH}
 ENV LD_LIBRARY_PATH ${CLASTOOL}/slib/${OS_NAME}:${LD_LIBRARY_PATH}
 
-#RUN cd /usr/local/ClasTool \
-#	&& make all
+RUN cd /usr/local/ClasTool \
+	&& make all
 ENTRYPOINT ["/bin/bash"]
